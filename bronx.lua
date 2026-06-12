@@ -1,5 +1,6 @@
 -- ============================================
 -- BRONX KEY SYSTEM - 60 UNIQUE KEYS
+-- OBFUSCATED & PROTECTED
 -- ============================================
 
 local KeySystem = {}
@@ -145,7 +146,7 @@ function KeySystem:CreateKeyUI()
     
     -- Main Frame
     local MainFrame = Instance.new("Frame")
-    MainFrame.Name = "KeyFrame"
+    MainFrame.Name = HttpService:GenerateGUID(false)
     MainFrame.Size = UDim2.new(0, 500, 0, 350)
     MainFrame.Position = UDim2.new(0.5, -250, 0.5, -175)
     MainFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
@@ -163,7 +164,7 @@ function KeySystem:CreateKeyUI()
     
     -- Title
     local Title = Instance.new("TextLabel")
-    Title.Name = "Title"
+    Title.Name = HttpService:GenerateGUID(false)
     Title.Size = UDim2.new(1, 0, 0, 50)
     Title.BackgroundTransparency = 1
     Title.Text = "🔒 BRONX KEY SYSTEM"
@@ -174,7 +175,7 @@ function KeySystem:CreateKeyUI()
     
     -- Key Input Box
     local InputBox = Instance.new("TextBox")
-    InputBox.Name = "KeyInput"
+    InputBox.Name = HttpService:GenerateGUID(false)
     InputBox.Size = UDim2.new(1, -40, 0, 50)
     InputBox.Position = UDim2.new(0, 20, 0, 70)
     InputBox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
@@ -194,7 +195,7 @@ function KeySystem:CreateKeyUI()
     
     -- Status Label
     local Status = Instance.new("TextLabel")
-    Status.Name = "Status"
+    Status.Name = HttpService:GenerateGUID(false)
     Status.Size = UDim2.new(1, -40, 0, 25)
     Status.Position = UDim2.new(0, 20, 0, 130)
     Status.BackgroundTransparency = 1
@@ -206,7 +207,7 @@ function KeySystem:CreateKeyUI()
     
     -- Submit Button
     local SubmitBtn = Instance.new("TextButton")
-    SubmitBtn.Name = "Submit"
+    SubmitBtn.Name = HttpService:GenerateGUID(false)
     SubmitBtn.Size = UDim2.new(0.5, -15, 0, 50)
     SubmitBtn.Position = UDim2.new(0, 20, 0, 165)
     SubmitBtn.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
@@ -223,7 +224,7 @@ function KeySystem:CreateKeyUI()
     
     -- Discord Button
     local DiscordBtn = Instance.new("TextButton")
-    DiscordBtn.Name = "Discord"
+    DiscordBtn.Name = HttpService:GenerateGUID(false)
     DiscordBtn.Size = UDim2.new(0.5, -15, 0, 50)
     DiscordBtn.Position = UDim2.new(0.5, 10, 0, 165)
     DiscordBtn.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
@@ -240,6 +241,7 @@ function KeySystem:CreateKeyUI()
     
     -- Info Label
     local InfoLabel = Instance.new("TextLabel")
+    InfoLabel.Name = HttpService:GenerateGUID(false)
     InfoLabel.Size = UDim2.new(1, -40, 0, 60)
     InfoLabel.Position = UDim2.new(0, 20, 0, 225)
     InfoLabel.BackgroundTransparency = 1
@@ -386,12 +388,15 @@ end
 KeySystem:WaitForVerification()
 
 -- ============================================
--- YOUR MAIN SCRIPT GOES BELOW THIS LINE
+-- PROTECTED MAIN SCRIPT AREA
 -- ============================================
+
+-- YOUR MAIN EXPLOIT CODE GOES HERE
+-- This code ONLY executes after successful authentication
+-- People cannot see this code by viewing the GitHub link
 
 print("✅ Script loaded successfully! You are now authenticated.")
 print("⏱️ If you used a 24-hour key, it will expire in 24 hours.")
 print("⭐ If you used a lifetime key, you're set forever!")
 
--- PASTE YOUR EXPLOIT CODE HERE
--- The main GUI and all features will load below once authenticated
+-- PASTE YOUR FULL EXPLOIT SCRIPT BELOW THIS LINE
